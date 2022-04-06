@@ -9,7 +9,11 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../styles.css"))
 })
 
-app.use("/js", express.static(path.join(__dirname, "index.js")))
+app.use("/js", express.static(path.join(__dirname, "../index.js")))
+
+// to show css on delployed version
+app.use("/css", express.static(path.join(__dirname, "../styles.css")))
+
 
 
 const PORT = process.env.PORT || 3000;

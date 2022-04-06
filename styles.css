@@ -1,9 +1,12 @@
-/* background for whole page */
 body, html {
   background-color: rgb(82, 78, 78);
-  color: white;
+  color: antiquewhite;
 }
 
 h1 {
-  color: antiquewhite;
+  text-align: center;
+}
+
+.greet {
+  text-align: center;
 }
